@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jaimin.dbdemo" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".StartPage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddEmployeeData"
+            android:label="@string/title_activity_add_employee_data" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".ViewEmployeeData"
+            android:label="@string/title_activity_view_employee_data" >
+        </activity>
+        <activity
+            android:name=".DetailedView"
+            android:label="@string/title_activity_detailed_view" >
+        </activity>
+        <activity
+            android:name=".employee_edit_data"
+            android:label="@string/title_activity_employee_edit_data"
+            android:parentActivityName=".DetailedView" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jaimin.dbdemo.DetailedView" />
+        </activity>
+    </application>
+
+</manifest>
